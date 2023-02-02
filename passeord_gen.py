@@ -18,7 +18,7 @@ for char in range(1, nr_symbols+1) :
   Easy_password+=random.choice(symbols)
 for char in range(1, nr_numbers+1) :
   Easy_password+=random.choice(numbers)
-print("Easy Password : "Easy_password)
+print(f"Easy Password : {Easy_password}")
 
 #Hard Level - Order of characters randomised:
 #e.g. 4 letter, 2 symbol, 2 number = g^2jk8&P
@@ -34,4 +34,4 @@ random.shuffle(Hard_password)
 password=""
 for char in Hard_password:
   password += char
-print("Hard Password : "password)
+print(f"Hard Password : {password}")
